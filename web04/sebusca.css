@@ -6,6 +6,20 @@
 h3
 {
   font-family: Wantedo;
-  font-size: 30px;
+  font-size: 60px;
+  text-align: center;
+  border: 1px solid;
+  box-shadow: rgb(150,150,150)5px 5px;
+}
+body{
+  background-color: pink;
+
+}
+img{
+  height:500px ;
+  width:30% ;
+  margin-left: 35%;
+  margin-right: 35%;
+
 
 }
