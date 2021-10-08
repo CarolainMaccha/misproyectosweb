@@ -1,7 +1,11 @@
 @font-face {
-  font-family: wantedo;
-  src: url("AW/wantedo.ttf");
+  font-family: Wantedo;
+  src: url(font/wantedo/Wantedo.ttf);
+    src: url(font/wantedo/Wantedo.otf);
 }
-h3{
-  font-family: wantedo;
+h3
+{
+  font-family: Wantedo;
+  font-size: 30px;
+
 }
