@@ -1,0 +1,22 @@
+h2{
+  color: pink;
+  font-size: 40px;
+
+  right: 40%;
+
+}
+body{
+  background-color: black;
+
+background-image: url("fondo.gif");
+background-color: #cccccc;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+a{
+
+  right: 30%;
+  text-decoration: none;
+  font-size: 30px;
+}
