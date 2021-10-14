@@ -1,2 +1,2 @@
 # misproyectosweb
-Respositorio con mis proyectos web
+Repositorio con mis proyectos web
