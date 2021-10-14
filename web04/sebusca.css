@@ -3,23 +3,68 @@
   src: url(font/wantedo/Wantedo.ttf);
     src: url(font/wantedo/Wantedo.otf);
 }
-h3
+h2
 {
+  color:  #483928 ;
+  text-shadow:#a9855d 5px 5px;
   font-family: Wantedo;
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: lighter;
   text-align: center;
-  border: 1px solid;
-  box-shadow: rgb(150,150,150)5px 5px;
+  width: 80%;
+
+}
+
+.titulo1{
+  margin-left: 15%;
+  margin-top: 12%;
+}
+.titulo1 h2{
+    border-bottom: 4px solid #483928;
+
+}
+.titulo2{
+  margin-top: 0%;
+
+}
+.titulo2 h2{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0%;
+  margin-left: 10%;
+}
+.titulo2 p{
+font-size: 100px;
+margin-top: -5%;
+width: 90%;
+margin-left: 5%;
+text-align: center;
+color: #917250 ;
+text-shadow:#483928 5px 5px;
+font-family: Wantedo;
+font-weight: normal;
 }
 body{
-  background-color: pink;
+
+  background-image: url(madera.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.cartel{
+  position: absolute;
+  background-image: url(sebusca.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 99%;
+  margin-left: 25%;
 
 }
 img{
-  height:500px ;
-  width:30% ;
-  margin-left: 35%;
-  margin-right: 35%;
-
-
+  border: 3px solid #483928 ;
+  height:50% ;
+  width:50% ;
+  margin-top: -6%;
+  margin-left: 27%;
+  margin-right: 25%;
 }
