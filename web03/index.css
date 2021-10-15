@@ -8,16 +8,38 @@ a{
   text-decoration: none;
   color: silver;
  }
- h1 {
-   color: red;
+ .titulo h1 {
+   color:  #C70039;
    font-size: 30px;
+ }
+ h4{
+   padding-left: 11px;
+   padding-right: 11px;
+   font-weight: normal;
+
  }
 div{
   width: 500px;
   margin: 0 auto; /* you can change 0 if your want top-bottom margin */
   background-color: white;
-  margin-bottom: 10px;
+
 }
 body{
   background: lightgray;
+}
+.card h2{
+  font-weight: lighter;
+}
+.card{
+  text-align: center;
+  padding-top: 10px;
+}
+.hobbies h2{
+  text-align: center;
+  font-weight: lighter;
+}
+.hobbies img{
+  width: 65%;
+  height: 65%;
+  margin-left: 8%;
 }
