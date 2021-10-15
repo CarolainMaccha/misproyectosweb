@@ -1,4 +1,3 @@
-
 a:hover {
     color: red;
     font-size: 20px;
@@ -8,7 +7,7 @@ a{
   text-decoration: none;
   color: silver;
  }
- .titulo h1 {
+ #titulo h1 {
    color:  #C70039;
    font-size: 30px;
  }
@@ -18,11 +17,16 @@ a{
    font-weight: normal;
 
  }
-div{
+div.container{
   width: 500px;
   margin: 0 auto; /* you can change 0 if your want top-bottom margin */
-  background-color: white;
 
+
+}
+div.container>div{
+  background-color: white;
+  border: 1px solid gray;
+  margin-bottom: 10px;
 }
 body{
   background: lightgray;
@@ -42,4 +46,5 @@ body{
   width: 65%;
   height: 65%;
   margin-left: 8%;
+  margin-right: 0%;
 }
