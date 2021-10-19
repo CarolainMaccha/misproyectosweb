@@ -34,17 +34,41 @@ body{
 .card h2{
   font-weight: lighter;
 }
-.card{
-  text-align: center;
-  padding-top: 10px;
+
+.card img{
+  border-radius: 70%;
 }
 .hobbies h2{
   text-align: center;
   font-weight: lighter;
 }
+.text-center >h2{
+  font-weight: lighter;
+}
+.hobbies{
+  padding-bottom: 10%;
+}
+.hobbies h3,p{
+  margin-left: 10%;
+}
 .hobbies img{
-  width: 65%;
-  height: 65%;
-  margin-left: 8%;
+  width: 150px;
+  height: 150px;
+  margin-left: 15%;
   margin-right: 0%;
+}
+.list-inline > li{
+  display: inline-block;
+  width: 25%;
+  padding-left: 20px;
+}
+.list-inline1 > li{
+  display: inline-block;
+  width: 20%;
+  padding-left: 0px;
+}
+
+.text-center{
+  text-align: center;
+
 }
