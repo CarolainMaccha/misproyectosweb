@@ -17,10 +17,29 @@ a{
    font-weight: normal;
 
  }
-div.container{
-  width: 500px;
-  margin: 0 auto; /* you can change 0 if your want top-bottom margin */
+ div.enlaces
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+#footer{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
+
+   #summary{
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+ #tabla{
+   padding-left: 450px;
+   padding-bottom: 30px;
+ }
+div.container{
+  width: 1450px;
+  margin: 0 auto; /* you can change 0 if your want top-bottom margin */
+margin-left: 250px;
 
 }
 div.container>div{
@@ -46,7 +65,8 @@ body{
   font-weight: lighter;
 }
 .hobbies{
-  padding-bottom: 10%;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 .hobbies h3,p{
   margin-left: 10%;
@@ -56,6 +76,7 @@ body{
   height: 150px;
   margin-left: 15%;
   margin-right: 0%;
+  border: 1px dotted blue;
 }
 .list-inline > li{
   display: inline-block;
@@ -70,5 +91,14 @@ body{
 
 .text-center{
   text-align: center;
+
+}
+
+#sidebar {
+  width: 130px;
+  background-color:  #566573;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
 
 }
