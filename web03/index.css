@@ -54,8 +54,8 @@ body{
   font-weight: lighter;
 }
 
-.card img{
-  border-radius: 70%;
+.text-center img{
+  border-radius: 100%;
 }
 .hobbies h2{
   text-align: center;
@@ -100,5 +100,6 @@ body{
   left: 0px;
   top: 0px;
   bottom: 0px;
+  padding-top: 50px;
 
 }
