@@ -1,0 +1,58 @@
+body{
+  background-image: url("fondoclaro.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: helvetica, arial, sans-serif;
+}
+.casilla1
+{
+  background-image: url("fondoclaro.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: helvetica, arial, sans-serif;
+  margin-left: 10%;
+  margin-top: 2%;
+
+  border-radius: 22%;
+  width: 500px;
+  height: 300px;
+  float: left;
+  position: absolute;
+}
+.casilla1 img{
+  border-radius: 20%;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+.casilla1 h3{
+
+  position: absolute;
+  margin-left: 100px;
+}
+.casilla2
+{
+  margin-left: 10%;
+  margin-top: 19%;
+  background-color:white;
+  border-radius: 25%;
+  width: 500px;
+  height: 450px;
+  float: left;
+  position: absolute;
+}
+.casilla3 {
+  padding: 10px;
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 10%;
+  width: 900px;
+  height: 750px;
+  margin-top: 2%;
+  margin-left: 40%;
+  position: absolute;
+}
+.formulario{
+  margin-left: 100px;
+  margin-top: 50px;
+}
