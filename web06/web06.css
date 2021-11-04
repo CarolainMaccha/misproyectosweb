@@ -4,6 +4,19 @@ body{
   background-size: cover;
   font-family: helvetica, arial, sans-serif;
 }
+@font-face {
+  font-family: creativeculture;
+  src: url(creative_culture/creativeculture.ttf);
+}
+.casilla1 h3 {
+  color:  white;
+  text-shadow:orange  3px 3px, purple 7px 7px;
+  font-family: creativeculture;
+  font-size: 70px;
+  font-weight: lighter;
+  margin-top: 50px;
+  width: 80%;
+}
 .casilla1 {
   background-image: url("fondoclaro.gif");
   background-repeat: no-repeat;
