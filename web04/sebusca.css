@@ -3,6 +3,11 @@
   src: url(font/wantedo/Wantedo.ttf);
     src: url(font/wantedo/Wantedo.otf);
 }
+body{
+  background-image: url(madera.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 h2
 {
   color:  #483928 ;
@@ -12,20 +17,16 @@ h2
   font-weight: lighter;
   text-align: center;
   width: 80%;
-
 }
-
 .titulo1{
   margin-left: 15%;
   margin-top: 12%;
 }
 .titulo1 h2{
     border-bottom: 4px solid #483928;
-
 }
 .titulo2{
   margin-top: 0%;
-
 }
 .titulo2 h2{
   font-size: 50px;
@@ -44,12 +45,6 @@ text-shadow:#483928 5px 5px;
 font-family: Wantedo;
 font-weight: normal;
 }
-body{
-
-  background-image: url(madera.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-}
 .cartel{
   position: absolute;
   background-image: url(sebusca.png);
@@ -58,7 +53,6 @@ body{
   width: 45%;
   height: 99%;
   margin-left: 25%;
-
 }
 img{
   border: 3px solid #483928 ;

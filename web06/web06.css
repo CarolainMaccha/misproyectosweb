@@ -50,6 +50,7 @@ body{
   height: 450px;
   float: left;
   position: absolute;
+  text-align: center;
 }
 .casilla3 {
   padding: 10px;
