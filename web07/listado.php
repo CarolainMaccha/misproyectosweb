@@ -14,7 +14,7 @@
         echo $data[0] . " " . $data[1] . " ";
         echo $data[2] . " " . $data[3] . " ";
         echo $data[4] . " " . $data[5] . " ";
-        echo $data[6] . "<br>";
+        echo $data[6] . " " . $data[7] . " años" . "<br>";
     }
     fclose($fichero);
     ?>

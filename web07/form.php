@@ -39,9 +39,11 @@
         <option value="Sagitario" selected>Sagitario</option>
         <option value="Capricornio">Capricornio</option>
         <option value="Libra">Libra</option>
-        <option value="leo">Leo</option>
+        <option value="leo">leo</option>
         <option value="Tauro" selected>Tauro</option>
       </select> <br><br>
+      <label for="edad">Edad:</label>&nbsp;
+      <input type="number" name="edad" value="" min="1" max="90"><br><br>
       <input type="text" name="prueba" value="" placeholder="Información"><br><br>
       <input type="submit" name="" value="Enviar">
 

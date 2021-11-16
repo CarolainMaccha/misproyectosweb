@@ -16,7 +16,9 @@
    $actual .= $_POST['fechanacimiento']." ";
    $actual .= $_POST['colorfavorito']." ";
    $actual .= $_POST['nota']." ";
-   $actual .= $_POST['Zodiaco']."\n";
+   $actual .= $_POST['Zodiaco']." ";
+   $actual .= $_POST['edad']."\n";
+
 
    file_put_contents($fichero, $actual);
    ?>
