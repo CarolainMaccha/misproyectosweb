@@ -1,11 +1,14 @@
 <?php
-
-$numero_aleatorio = 2
-
-
+session_start();
+if (! isset($_POST['numero']) ){ //si no envio nada
+  $_SESSION['numero']=rand(1,10);
+  $_SESSION['intentos']=0;
+}
+$numero_aleatorio = $_SESSION['numero'];
+$intentos=$_SESSION['intentos'];
+$_SESSION['intentos']=$_SESSION['intentos']+1;
+echo "llevas"." ".$intentos." intentos";
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -14,18 +17,14 @@ $numero_aleatorio = 2
     <title></title>
   </head>
   <body>
-    <span style="background-color:<?=rand_color()?>">hola</span>
-    <?php
-    function rand_color() {
-    return sprintf('#%06X', mt_rand(0, 0xFFFFFF));
-    }
-     ?>
+
     <h1>Adivina el Número!</h1>
     <div>
     <form  action="index.php" method="post">
       <input type="text" name="numero" value="">
       <input type="submit" name="" value="Enviar">
     </form>
+
     <br>
     <?php
     if( isset($_POST['numero']) ){
@@ -42,7 +41,11 @@ $numero_aleatorio = 2
     } else {
       echo "Bienvenido al juego!";
     }
+    if ($intentos>3) {
+        echo "Has perdido!";//calaverra y quitar formulario
+    }
      ?>
+     <p>  <a href="index.php">Reiniciar partida</a></p>
   </div>
   </body>
 </html>
