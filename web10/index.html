@@ -13,13 +13,74 @@
           cuenta= cuenta + 1
         })
       })
+    </script>
+    <script type="text/javascript">
+      window.addEventListener("resize",function (){
+        let ancho = window.innerWidth
+        let alto = window.innerHeight
+        let area = ancho*alto
+          document.body.innerHTML ="He cambiado:" + ancho +"x"+ alto + "=" + area
+      })
+    </script>
+
+    <script>
+      window.addEventListener("keypress",function(info){
+        //saber que tecla presiono
+        let keynum
+        keynum = info.which || info.keyCode
+        let tecla = document.getElementById('tecla')
+        tecla.innerHTML = "la tecla pulsada es: " + String.fromCharCode(keynum)
+
+        //cada vez que pulse una tecla tocar el css de body y poner un color aleatorio
+        let cuerpo
+        cuerpo = document.body
+        let randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
+        cuerpo.style.backgroundColor= randomColor;
+        document.body.append(randomColor + "\n")
+      })
+    </script>
+    <script type="text/javascript">
+    // solo suene el sonido de la vaca cuando presiones tecla m
+    window.addEventListener('keypress',function(info){
+      let sonidovaca = document.getElementById('vaca')
+        let sonidoperro = document.getElementById('perro')
+          let sonidogato = document.getElementById('gato')
+      if(info.key == 'm') {
+        sonidovaca.play()
+              }
+      if(info.key == 'p') {
+        sonidoperro.play()
+        }
+      if(info.key == 'g') {
+      sonidogato.play()
+              }
+
+
+    })
 
     </script>
+
     <title></title>
   </head>
   <body>
+
+    <!-- ––ejercicio eventos (Click) ------------------------>
     <h1>Primer JS</h1>
   <input type="button" id="boton" name="" value="Pulsáme!!">
+    <!--ejercicio eventos (resize) ------>
+    <h1>Evento resize</h1>
+    <!--ejercicio eventos (keypress) ------>
+    <h1 id="presionar">keypress</h1>
+    <p id="tecla"></p>
+   <!--ejercicio eventos (audio) ------>
+    <li>pulsa m para vaca</li>
+    <li>pulsa p para perro</li>
+    <li>pulsa g para gato</li>
+     <audio id=vaca src="VACA.wav" controls=true></audio><br>
+     <audio id=perro src="PERRO.wav" controls=true></audio><br>
+     <audio id=gato src="GATO.wav" controls=true></audio>
+
+
 
   </body>
 </html>
