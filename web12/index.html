@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> LA RULETA </title>
+    <script type="text/javascript">
+      let formulario = document.getElementById("form-rul")
+      let numero = formulario.numero.value
+      let numerorandom = rand(0,1);
+      let ganador = document.getElementById('ganador')
+      if (numero == randomnumero) {
+        ganador.innerHTML = numerorandom
+
+      }
+    </script>
+  </head>
+  <body>
+    <img src="ruleta.jpg" alt="ruleta">
+    <br>
+    <form id="form-rul">
+
+
+    <label for="Escribe un número:"></label> <br>
+    <input type="number" name="" value="numero" maxlength="2" max="36" min="0">
+    <input type="button" name="" value="JUGAR">
+    </form>
+    <h2 id="ganador">Número Ganador</h2>
+
+  </body>
+</html>

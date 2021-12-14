@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <script type="text/javascript">
+      window.addEventListener("load",function (){
+
+        let resultado = document.getElementById("res")
+        let botoncalcular= document.getElementById("calcular")
+        let formulario = document.getElementById("calc-form")
+         botoncalcular.addEventListener("click", function(){
+           let n1 = parseInt(formulario.n1.value)
+           let n2 = parseInt(formulario.n2.value)
+           let op = formulario.op.value
+           let res = 0
+          if (op == 'suma') {
+             res = n1+n2
+          }
+          if (op == 'resta') {
+            res = n1-n2
+          }
+          if (op == 'division') {
+             res = n1/n2
+          }
+          if (op == 'multiplicacion' ) {
+           res= n1*n2
+          }
+            resultado.innerHTML= "El resultado es:"+" " + res
+            resultado.style.color = "blue"
+        })
+      })
+      </script>
+  </head>
+  <body style="margin: 15%;text-align:center;background-color:pink;">
+    <h1 style="text-align:center;">Calculadora</h1>
+    <form id="calc-form" style="background-color:white;border-radius:10px;height:300px;border:2px solid red;">
+      <br><br>
+      <label for="Número 1">Número 1</label>
+      <input type="number" name="" id="n1"value=""> &nbsp;&nbsp;&nbsp;
+      <label for="Número 2">Número 2</label>
+      <input type="number" name="" id="n2"value=""><br><br><br>
+        <div>
+            <input type="radio" id="op" name="op" value="suma">
+            <label for="Suma">suma</label>
+
+            <input type="radio" id="op" name="op" value="resta">
+            <label for="restar">restar</label>
+
+            <input type="radio" id="op" name="op" value="division">
+            <label for="dividir">División</label>
+
+            <input type="radio" id="op" name="op" value="multiplicacion">
+            <label for="multiplicar">Multiplicación</label>
+        </div><br><br>
+        <div>
+          <button type="button" id="calcular">Calcular</button>
+          <h1 id="res" style="color:black;">Resultado</h1>
+        </div>
+
+
+        </select>
+
+      </select>
+    </form>
+  </body>
+</html>
