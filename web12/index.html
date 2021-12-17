@@ -4,27 +4,86 @@
     <meta charset="utf-8">
     <title> LA RULETA </title>
     <script type="text/javascript">
+    window.addEventListener("load",function (){
       let formulario = document.getElementById("form-rul")
-      let numero = formulario.numero.value
-      let numerorandom = rand(0,1);
-      let ganador = document.getElementById('ganador')
-      if (numero == randomnumero) {
-        ganador.innerHTML = numerorandom
+      let calcular = document.getElementById("calcular")
+      let mensaje = document.getElementById("mensaje")
+      let res =document.getElementById("res")
+      let cuenta=document.getElementById("cuenta")
+      let saldo= cuenta.saldo.value
+      calcular.addEventListener("click", function(){
+        let imagen = document.getElementById("imagenruleta")
+        imagen.src="movrul.gif"
+        setTimeout(function(){
 
-      }
+          let numerorandom = Math.floor(Math.random()*37)
+          let numero = formulario.numero.value
+          if (numero==numerorandom) {
+            mensaje.innerHTML="El número ganador es: "+numerorandom
+            res.innerHTML="Has ganado" + "Tu Saldo es de: "+(saldo*10)+" euros"
+          }
+          if (numero!=numerorandom) {
+            mensaje.innerHTML="El número ganador es: "+numerorandom
+            res.innerHTML="No has ganado"+"<br>" +"Tu saldo es de: "+ (saldo-10)+" euros"
+
+          }
+          //imagen.src="ruleta_"+numerorandom+".jpg"
+          imagen.src="ruleta.jpg"
+          mensaje.innerHTML =numerorandom
+        },2000)
+
+      })
+    })
     </script>
+    <style media="screen">
+        .btn {
+        background-color: #f4511e;
+        color: white;
+        padding: 16px 30px;
+        border-radius: 90px;
+        text-align: center;
+        font-size: 16px;
+          }
+        .btn:hover {opacity: 0.5;
+        transform: scale3d(.97,.97,1);}
+          }
+        @keyframes mymove {
+          0%   {top: 0px; left: 0px; background: red;}
+          50%  {top: 100px; left: 100px; background: yellow;}
+          100% {top: 0px; left: 0px; background: red;}
+        }
+        div.tittle {
+          animation: mymove 5s infinite;
+          text-shadow: -1px -1px 0px darkred,
+          3px 3px 0px white,
+          6px 6px 0px darkred;
+          color: red;
+          text-align:center;font-size:23px;
+          }
+    </style>
   </head>
-  <body>
-    <img src="ruleta.jpg" alt="ruleta">
+  <body style="text-align:center;background-color:darkgreen;"><br>
+    <div class="izquierda"style="float:right;margin-right:30%;margin-top:5%;">
+     <h2>saldo:</h2><br>
+     <form id="cuenta" action="index.html" method="post">
+       <input type="text" id="saldo"name="" value="">
+     </form>
+    </div>
+    <div class="derecha" style="float:left;margin-left:20%;">
+    <div class="tittle">
+      <h1 class="tittle" >La Ruleta</h1>
+    </div>
+    <img id=imagenruleta src="ruleta.jpg" alt="ruleta" width="450px" height="450px" style="border-radius:50px;">
     <br>
     <form id="form-rul">
 
 
     <label for="Escribe un número:"></label> <br>
-    <input type="number" name="" value="numero" maxlength="2" max="36" min="0">
-    <input type="button" name="" value="JUGAR">
+    <input type="number" name="numero" id="numero" value="numero" maxlength="2" max="36" min="0" style="width:50px;Height:20px;text-align:center;"><br><br>
+    <input class="btn" id="calcular" type="button" name="" value="JUGAR">
     </form>
-    <h2 id="ganador">Número Ganador</h2>
-
+    <h2 id="mensaje"></h2>
+    <h3 id="res"></h3>
+  </div>
   </body>
 </html>
