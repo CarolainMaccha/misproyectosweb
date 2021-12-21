@@ -3,39 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title> LA RULETA </title>
-    <script type="text/javascript">
-    window.addEventListener("load",function (){
-      let formulario = document.getElementById("form-rul")
-      let calcular = document.getElementById("calcular")
-      let mensaje = document.getElementById("mensaje")
-      let res =document.getElementById("res")
-      let cuenta=document.getElementById("cuenta")
-      let saldo= cuenta.saldo.value
-      calcular.addEventListener("click", function(){
-        let imagen = document.getElementById("imagenruleta")
-        imagen.src="movrul.gif"
-        setTimeout(function(){
+        <script type="text/javascript">
+          window.addEventListener("load",function (){
 
-          let numerorandom = Math.floor(Math.random()*37)
-          let numero = formulario.numero.value
-          if (numero==numerorandom) {
-            mensaje.innerHTML="El número ganador es: "+numerorandom
-            res.innerHTML="Has ganado" + "Tu Saldo es de: "+(saldo*10)+" euros"
-          }
-          if (numero!=numerorandom) {
-            mensaje.innerHTML="El número ganador es: "+numerorandom
-            res.innerHTML="No has ganado"+"<br>" +"Tu saldo es de: "+ (saldo-10)+" euros"
+              let formulario = document.getElementById("form-rul")
+              let calcular = document.getElementById("calcular")
+              let mensaje = document.getElementById("mensaje")
+              let res =document.getElementById("res")
+              let cuenta=document.getElementById("cuenta")
+              let saldo= cuenta.saldo.value
+              calcular.addEventListener("click", function(){
+                  let imagen = document.getElementById("imagenruleta")
+                  imagen.src="movrul.gif"
 
-          }
-          //imagen.src="ruleta_"+numerorandom+".jpg"
-          imagen.src="ruleta.jpg"
-          mensaje.innerHTML =numerorandom
-        },2000)
+                  setTimeout(function(){
+                      let numerorandom = Math.floor(Math.random()*37)
+                      let numero = formulario.numero.value
+                      if (numero==numerorandom) {
+                        mensaje.innerHTML="El número ganador es: "+numerorandom
+                        res.innerHTML="Has ganado" + "Tu Saldo es de: "+(saldo*10)+" euros"
+                      }
+                      if (numero!=numerorandom) {
+                        mensaje.innerHTML="El número ganador es: "+numerorandom
+                        res.innerHTML="No has ganado"+"<br>" +"Tu saldo es de: "+ (saldo-10)+" euros"
+                      }
+                      //imagen.src="ruleta_"+numerorandom+".jpg"
+                      imagen.src="ruleta.jpg"
+                      mensaje.innerHTML =numerorandom
 
-      })
-    })
-    </script>
-    <style media="screen">
+                    },2000)
+
+              })
+          })
+          </script>
+          <style media="screen">
         .btn {
         background-color: #f4511e;
         color: white;
@@ -46,14 +47,7 @@
           }
         .btn:hover {opacity: 0.5;
         transform: scale3d(.97,.97,1);}
-          }
-        @keyframes mymove {
-          0%   {top: 0px; left: 0px; background: red;}
-          50%  {top: 100px; left: 100px; background: yellow;}
-          100% {top: 0px; left: 0px; background: red;}
-        }
         div.tittle {
-          animation: mymove 5s infinite;
           text-shadow: -1px -1px 0px darkred,
           3px 3px 0px white,
           6px 6px 0px darkred;
